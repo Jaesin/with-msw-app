@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+console.log(`[next.config] File loaded. Process id: ${process.pid}.`);
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+};
+
+module.exports = nextConfig;
